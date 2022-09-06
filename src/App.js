@@ -21,7 +21,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    searchMovies('Spiderman')
+    searchMovies('superman')
   }, []);
 
   return (
@@ -31,7 +31,7 @@ const App = () => {
       <form onSubmit={(e) => {
         e.preventDefault();
         console.log(searchTerm);
-        searchMovies(searchTerm ? searchTerm : 'Spiderman');
+        searchMovies(searchTerm ? searchTerm : 'superman');
       }}>
         <div className="search">
           <input
